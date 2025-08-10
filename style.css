@@ -6,7 +6,7 @@ body {
   padding: 2rem;
 }
 
-/* ساختار دکمه و منو */
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -85,14 +85,14 @@ body {
   margin-right: auto;
 }
 
-/* آیتم منو */
+
 .nav-item {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
 }
 
-/* منوی مخفی */
+
 .mega-menu {
   display: none;
   position: absolute;
@@ -108,7 +108,7 @@ body {
   z-index: 100;
 }
 
-/* فقط موقع hover روی دسته‌بندی‌ها باز بشه */
+
 .nav-item-wrapper:hover .mega-menu {
   display: flex;
 }
@@ -190,18 +190,18 @@ body {
 }
 
 .mega-menu {
-  display: none; /* مخفی کردن ساب‌منو به صورت پیش‌فرض */
+  display: none; 
   position: absolute;
   background-color: #0b1829ee;
   z-index: 1;
-  opacity: 0; /* شفافیت اولیه */
-  transform: translateY(-10px); /* جابجایی اولیه */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* انیمیشن */
+  opacity: 0; 
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 .mega-menu.open {
-  display: block; /* نمایش ساب‌منو */
-  opacity: 1; /* شفافیت کامل */
-  transform: translateY(0); /* جابجایی به موقعیت اصلی */
+  display: block; 
+  opacity: 1; 
+  transform: translateY(0); 
   font-size: 16px;
   font-weight: bold;
 }
@@ -209,8 +209,8 @@ body {
   padding: 15px;
 }
 .menu {
-  display: none; /* مخفی کردن منوی ورود/عضویت */
+  display: none; 
 }
 .dropdown:hover .menu {
-  display: block; /* نمایش منوی ورود/عضویت هنگام هاور */
+  display: block;
 }
