@@ -2,35 +2,36 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <title> ورود / عضویت  </title>
+    <title>ورود / عضویت</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="navbar">
       <div class="nav-item-wrapper">
         <div class="nav-item">دسته‌بندی‌ها</div>
-
-        <!-- منوی بازشونده -->
         <div class="mega-menu">
           <div class="column">
-            <a href="#">فیلم‌ها <span>(25,904)</span></a>
-            <a href="#">مستند <span>(1,049)</span></a>
-            <a href="#">پیشنهادی <span>(197)</span></a>
-            <div class="highlight">۲۵۰ فیلم برتر</div>
-          </div>
-          <div class="column">
-            <a href="#">سریال‌ها <span>(6,865)</span></a>
-            <a href="#">شخصیت‌ها <span>(56,673)</span></a>
-            <a href="#">پخش آنلاین <span>(24,788)</span></a>
-            <div class="highlight">۲۵۰ سریال برتر</div>
-          </div>
-          <div class="column">
-            <a href="#">انیمیشن <span>(1,537)</span></a>
-            <a href="#">جدول باکس‌آفیس</a>
-            <a href="#">دوبله <span>(9,576)</span></a>
             <button class="icon-btn">📺 بخش‌ها</button>
             <button class="icon-btn">🎬 ژانر فیلم</button>
             <button class="icon-btn">📽️ ژانر سریال</button>
+          </div>
+
+          <div class="column">
+            <a href="#">فیلم‌ها (25,904)</a>
+            <a href="#">مستند (1,049)</a>
+            <a href="#">پیشنهادی (197)</a>
+            <a href="#">۲۵۰ سریال برتر</a>
+          </div>
+          <div class="column">
+            <a href="#">سریال‌ها (6,865)</a>
+            <a href="#">شخصیت‌ها (56,809)</a>
+            <a href="#">پخش آنلاین (24,788)</a>
+            <a href="#">۲۵۰ سریال برتر</a>
+          </div>
+          <div class="column">
+            <a href="#">انیمیشن (1,537)</a>
+            <a href="#">جدول باکس‌آفیس</a>
+            <a href="#">دوبله (9,680)</a>
           </div>
         </div>
       </div>
@@ -54,5 +55,19 @@
         </div>
       </div>
     </div>
+
+    <!-- اضافه کردن اسکریپت برای کنترل باز و بسته شدن ساب‌منو -->
+    <script>
+      const navItem = document.querySelector(".nav-item-wrapper");
+      const megaMenu = document.querySelector(".mega-menu");
+
+      navItem.addEventListener("mouseenter", () => {
+        megaMenu.classList.add("open");
+      });
+
+      navItem.addEventListener("mouseleave", () => {
+        megaMenu.classList.remove("open");
+      });
+    </script>
   </body>
 </html>
